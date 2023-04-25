@@ -1,0 +1,80 @@
+{
+  "id": "2666286d-cbc2-4e3e-b7a1-063442733e57",
+  "version": "2.0",
+  "name": "day3",
+  "url": "https://demo.opencart.com/",
+  "tests": [{
+    "id": "fae05538-b922-492e-a8e6-c37310e81506",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "8fdaef03-3cd2-4e93-8430-6af647b417dd",
+    "name": "4",
+    "commands": [{
+      "id": "a1cf060e-f839-4cf7-a1e1-9a8a99d3474e",
+      "comment": "",
+      "command": "open",
+      "target": "https://demo.opencart.com",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2222f2c4-4312-452e-a515-ff20539f76ed",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Phones & PDAs",
+      "targets": [
+        ["linkText=Phones & PDAs", "linkText"],
+        ["css=.nav-item:nth-child(6) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Phones & PDAs')]", "xpath:link"],
+        ["xpath=//div[@id='narbar-menu']/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://demo.opencart.com/index.php?route=product/category&language=en-gb&path=24')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Phones & PDAs')]", "xpath:innerText"]
+      ],
+      "value": "var1"
+    }, {
+      "id": "333cc3a9-6f6d-465d-aba6-757fd24904d3",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=.col:nth-child(1) .img-fluid",
+      "targets": [
+        ["css=.col:nth-child(1) .img-fluid", "css:finder"],
+        ["xpath=//img[@alt='HTC Touch HD']", "xpath:img"],
+        ["xpath=//div[@id='product-list']/div/form/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//form/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bfaff753-5d68-4ed9-9bce-45fbfc87977d",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=button-cart",
+      "targets": [
+        ["id=button-cart", "id"],
+        ["css=#button-cart", "css:finder"],
+        ["xpath=//button[@id='button-cart']", "xpath:attributes"],
+        ["xpath=//form[@id='form-product']/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add to Cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "da8cda8f-10a0-4f76-abf4-b4cde96787a0",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=alert",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "feb855e3-97b1-46e9-ab00-75a07366c3e3",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["fae05538-b922-492e-a8e6-c37310e81506"]
+  }],
+  "urls": ["https://demo.opencart.com/"],
+  "plugins": []
+}
